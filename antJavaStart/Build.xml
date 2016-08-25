@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2016. 8. 25. 오후 3:24:26                                                        
+
+     project    
+     description
+                   
+     USER                                                                
+     ====================================================================== -->
+<project name="project" default="default">
+	<description>
+            description
+    </description>
+	<property name="HelloText" value="Hello" />
+	<property name="WorldText" value="World" />
+
+	<!-- ================================= 
+          target: default              
+         ================================= -->
+	<target name="default" depends="depends" description="description">
+		<echo>${HelloText}</echo>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="depends">
+		<echo>${WorldText}</echo>
+	</target>
+
+</project>
